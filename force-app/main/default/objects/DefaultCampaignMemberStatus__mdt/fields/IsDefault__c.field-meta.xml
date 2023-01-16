@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsDefault__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether this status is the default status (true) or not (false). Beginning with API version 39.0, there must be a default CampaignMemberStatus defined for every campaign</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Indicates whether this status is the default status (true) or not (false). Beginning with API version 39.0, there must be a default CampaignMemberStatus defined for every campaign</inlineHelpText>
+    <label>Default</label>
+    <type>Checkbox</type>
+</CustomField>
