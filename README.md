@@ -1,18 +1,44 @@
-# Salesforce DX Project: Next Steps
+# Simple Campaign Member Status 
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Background
 
-## How Do You Plan to Deploy Your Changes?
+Salesforce does not have a standard way of changing and creating new default Campaign Member Statuses.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Deploy
 
-## Configure Your Salesforce DX Project
+You can use the quick installer here to deploy directly to your org. \
+[![Deploy to salesforce](https://githubsfdeploy.herokuapp.com/resources/img/deploy.png)](https://githubsfdeploy.herokuapp.com/?owner=ehsky&repo=Default-Campaign-member-status-creator)
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### Quick hands-on demo in Salesforce org
 
-## Read All About It
+You can quickly spin up an org by clicking on the picture below. \
+This will create a scratch org that you have access to for 1 day \
+[![Demo scratch org](/.assets/deployDemo.png)](https://hosted-scratch.herokuapp.com/launch?template=https://github.com/ehsky/Default-Campaign-member-status-creator)
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+# How to set up a new default status
+
+1.  Open Salesforce **Setup**
+2.  Go to **Custom Metadata Types**
+3.  On the Metadata Type **Default Campaign Member Status**, click **Manage Records**
+4.  Click **New**
+ETC.
+
+Example status \
+![Example status ](.assets/exampleCustomMDTrecord.png)
+
+## Custom Metadata Type
+
+| Field Type     | Field Name | API Name    | Data Type | Example | Description                                     |
+|----------------|------------|-------------|-----------|---------|-------------------------------------------------|
+| Standard Field | Label      | MasterLabel | Text(40)  |         | Descriptive Label of the campaign member status |
+|                |            |             |           |         |                                                 |
+|                |            |             |           |         |                                                 |
+
+
+# Future potential improvments
+
+TBD...
+
+# Links or documentation
+
+TBD...
