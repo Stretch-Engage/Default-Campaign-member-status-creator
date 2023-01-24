@@ -30,7 +30,7 @@ Example status \
 
 | Field Type     | Field Name | API Name    | Data Type | Example | Description                                     |
 |----------------|------------|-------------|-----------|---------|-------------------------------------------------|
-| Standard Field | Label      | MasterLabel | Text(40)  |         | Descriptive Label of the campaign member status |
+| Standard Field | Label as   | MasterLabel | Text(40)  |         | Descriptive Label of the campaign member status |
 |                |            |             |           |         |                                                 |
 |                |            |             |           |         |                                                 |
 
