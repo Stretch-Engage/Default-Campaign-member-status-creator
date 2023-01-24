@@ -2,7 +2,7 @@
 
 ## Background
 
-Salesforce does not have a standard way of changing and creating new default Campaign Member Statuses.
+Salesforce does not have a standard way of changing and creating new default Campaign Member Statuses. 
 
 ## Deploy
 
@@ -17,11 +17,15 @@ This will create a scratch org that you have access to for 1 day \
 
 # How to set up a new default status
 
-1.  Open Salesforce **Setup**
-2.  Go to **Custom Metadata Types**
-3.  On the Metadata Type **Default Campaign Member Status**, click **Manage Records**
-4.  Click **New**
-ETC.
+1.	Open Salesforce Setup
+2.	Go to Custom Metadata Types
+3.	On the Metadata Type Default Campaign Member Status, click Manage Records
+4.	Current default Campaign member statuses are pre-populated: ‘Attended’, ‘Deregistered’, ‘Invited’, ‘No-Show’ and ‘Registered’
+5.	To add a new status Click New.
+6.	Fill in Label, Default Campaign Member Status Name and Status Name
+7.	Click Save
+![image](https://user-images.githubusercontent.com/123372077/214292774-c5f755cc-e614-4bc5-ba34-fb6903acb7ad.png)
+
 
 Example status \
 ![Example status ](.assets/exampleCustomMDTrecord.png)
@@ -30,9 +34,18 @@ Example status \
 
 | Field Type     | Field Name | API Name    | Data Type | Example | Description                                     |
 |----------------|------------|-------------|-----------|---------|-------------------------------------------------|
-| Standard Field | Label as   | MasterLabel | Text(40)  |         | Descriptive Label of the campaign member status |
+| Standard Field | Label      | MasterLabel | Text(40)  |         | Descriptive Label of the campaign member status |
 |                |            |             |           |         |                                                 |
 |                |            |             |           |         |                                                 |
+
+
+## Custom Metadata Type
+
+| Field Type     | Field Name | API Name     | Data Type | Example | Description                                     |
+|----------------|------------|------------- |-----------|---------|-------------------------------------------------|
+| Custom Field   | Default    |IsDefault__c  |Checkbox   |         |                                                 |
+| Custom Field   |Description |Description__c           |           |         |                                                 |
+| Custom Field   |            |              |           |         |                                                 |
 
 
 # Future potential improvments
